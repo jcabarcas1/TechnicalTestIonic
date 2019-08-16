@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title text-center> MyAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding id="content" [formGroup]="userForm">
+  <ion-item>
+    <ion-label position="floating">
+      Username
+    </ion-label>
+    <ion-input formControlName="username" type="text" name="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">
+      Password
+    </ion-label>
+    <ion-input formControlName="password" maxlength="8" type="password" name="username"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="onSubmit()">
+    Login
+  </ion-button>
+
+  <ion-text *ngIf="message">Error: {{message}}</ion-text>
+</ion-content>
