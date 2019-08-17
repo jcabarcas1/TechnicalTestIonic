@@ -11,7 +11,15 @@ Los usuarios para probar en la aplicación son:
 ```
 Los pasos y requisitos para desplegar la aplicación en iOS son:
 
-### Requisitos: 
+### Pruebas unitarias:
+
+Para ejecutar las pruebas unitarias se debe realizar con el siguiente comando desde la raíz del proyecto:
+
+```bash
+    ng test
+```
+
+### Requisitos iOS: 
     - node 10.16.3
     - Xcode 7 o mayor
     - iOS 9
